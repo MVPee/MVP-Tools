@@ -32,9 +32,10 @@ if [ -f "$APPLICATION" ]; then
     
     if [[ ":$PATH:" != *":$DIR:"* ]]; then
         echo "/!\\ $DIR is not in \$PATH. You may need to add it for easier access."
+    else
+        echo "Successfully installed $APPLICATION in $DIR."
     fi
 
-    echo "Successfully installed $APPLICATION in $DIR."
     echo "Usage: $APPLICATION [-h | cmd]."
 else
     echo "Error: Compilation failed."
