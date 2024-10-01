@@ -24,9 +24,20 @@ static std::vector<std::string> getClassNames(void) {
 ** ------------------------------- CONSTRUCTOR --------------------------------
 */
 
+Cannonical::Cannonical() {}
 
-Cannonical::Cannonical() {
-    std::vector<std::string> classNames = getClassNames();
+Cannonical::Cannonical(int ac, char **av) {
+	std::vector<std::string> classNames;
+	if (ac > 2) {
+		std::string className;
+		for (size_t i = 2; av[i]; i++) {
+			className = av[i];
+			className[0] = toupper(className[0]);
+			classNames.push_back(className);
+		}
+	}
+	else
+    	classNames = getClassNames();
     try {
         for (const auto &className : classNames) {
             createHPPFile(className);

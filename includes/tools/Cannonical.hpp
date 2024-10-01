@@ -14,8 +14,9 @@ class Cannonical {
 
 		Cannonical(const Cannonical &src);
 		Cannonical &operator=(const Cannonical &rhs);
-	public:
 		Cannonical();
+	public:
+		Cannonical(int ac, char **av);
 		~Cannonical();
 };
 

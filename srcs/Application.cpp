@@ -40,14 +40,14 @@ Application &Application::operator=(const Application &rhs) {
 */
 
 void Application::run(int ac, char **av) {
-    if (ac != 2)
+    if (ac < 2)
         throw std::runtime_error("Usage: MVP [-h | cmd]");
 	const std::string cmd(av[1]);
 	if (cmd == "-h")
 		showHelp();
 	else if (cmd == "c" || cmd == "cannonical") {
 		try {
-			Cannonical();
+			Cannonical(ac ,av);
 		}
 		catch (std::exception &e) {
 			throw std::runtime_error(e.what());
