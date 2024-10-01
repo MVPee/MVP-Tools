@@ -1,6 +1,8 @@
 #ifndef APPLICATION_HPP
 # define APPLICATION_HPP
 
+# define VERSION 0.1
+
 # include <iostream>
 # include <string>
 # include <signal.h>
