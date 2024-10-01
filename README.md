@@ -30,11 +30,11 @@ Lots of tools is comming soon...
 ```bash
 git clone git@github.com:MVPee/MVP-Tools.git; ./start.sh
 ```
-It will automatically compile the project and put the binary in a valid /bin file
+It will automatically compile the project and place the binary in the appropriate /bin directory.
 ```bash
 make; mv MVP /usr/bin
 ```
-You can now launch the program with
+You can now launch the program using the following command:
 ```
 MVP [OPTION/CMD]
 ```
