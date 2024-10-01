@@ -6,9 +6,9 @@
 
 static void showHelp() {
 	std::cout << "Options:" << std::endl;
-	std::cout << "\t-h\t\thelp" << std::endl;
-	std::cout << "\t-v/version\tversion" << std::endl;
-	std::cout << "\tc/cannonical\tcreate canonical class" << std::endl;
+	std::cout << "\t-h --help\thelp" << std::endl;
+	std::cout << "\t-v --version\tversion" << std::endl;
+	std::cout << "\tc cannonical\tcreate canonical class" << std::endl;
 }
 
 /*
@@ -46,7 +46,7 @@ void Application::run(int ac, char **av) {
 	const std::string cmd(av[1]);
 	if (cmd == "-h")
 		showHelp();
-	else if (cmd == "-v" || cmd == "version")
+	else if (cmd == "-v")
 		std::cout << VERSION << std::endl;
 	else if (cmd == "c" || cmd == "cannonical") {
 		try {
