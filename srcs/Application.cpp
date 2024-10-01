@@ -45,9 +45,9 @@ void Application::run(int ac, char **av) {
         throw std::runtime_error("Usage: MVP [-h | cmd]");
 	}
 	const std::string cmd(av[1]);
-	if (cmd == "-h")
+	if (cmd == "-h" || cmd == "--help")
 		showHelp();
-	else if (cmd == "-v")
+	else if (cmd == "-v" || cmd == "--version")
 		std::cout << VERSION << std::endl;
 	else if (cmd == "c" || cmd == "cannonical") {
 		try {

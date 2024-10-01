@@ -1,7 +1,7 @@
 #ifndef APPLICATION_HPP
 # define APPLICATION_HPP
 
-# define VERSION 0.1
+# define VERSION 0.11
 
 # include <iostream>
 # include <string>
