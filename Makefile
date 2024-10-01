@@ -13,7 +13,7 @@ OBJECTS := $(patsubst %.cpp,$(OBJS_DIR)/%.o,$(SOURCES))
 DEPENDS := $(patsubst %.cpp,$(OBJS_DIR)/%.d,$(SOURCES))
 
 CXX := c++
-CXXFLAGS := -std=c++17 -Wall -Werror -Wextra
+CXXFLAGS := -std=c++11 -Wall -Werror -Wextra
 
 all: $(NAME)
 

@@ -3,6 +3,7 @@
 
 # include <iostream>
 # include <string>
+# include <signal.h>
 # include "./tools/Cannonical.hpp"
 
 class Application {
