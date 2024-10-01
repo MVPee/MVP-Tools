@@ -5,7 +5,9 @@ GREEN=\033[0;32m
 NC=\033[0m
 
 OBJS_DIR := .objs
-SOURCES = main.cpp
+SOURCES = 	main.cpp \
+			srcs/Application.cpp \
+			srcs/tools/Cannonical.cpp
 
 OBJECTS := $(patsubst %.cpp,$(OBJS_DIR)/%.o,$(SOURCES))
 DEPENDS := $(patsubst %.cpp,$(OBJS_DIR)/%.d,$(SOURCES))
@@ -37,6 +39,6 @@ fclean: clean
 re: fclean all
 
 run: all
-	./$(NAME)
+	./$(NAME) c
 
 .PHONY: all clean fclean re run debug
