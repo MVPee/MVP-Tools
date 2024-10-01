@@ -13,7 +13,7 @@ if [ -f "$APPLICATION" ]; then
             echo "Failed to move $APPLICATION to $BREW_DIR. Attempting to move to $BIN_DIR."
             sudo mv "$APPLICATION" "$BIN_DIR" &> /dev/null
             if [ $? -ne 0 ]; then
-                echo "Error: Unable to move $APPLICATION to any bin directory."
+                echo "Error: Unable to move $APPLICATION to any bin directory. You can try to install brew."
                 exit 1
             fi
         fi
