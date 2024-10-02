@@ -28,7 +28,7 @@ Lots of tools is comming soon...
 
 ❗ You need to install Homebrew on macOS if you don't have the necessary permissions.
 ```bash
-git clone git@github.com:MVPee/MVP-Tools.git && cd MVP-Tools && ./start.sh
+git clone git@github.com:MVPee/MVP-Tools.git ~/MVP-Tools && cd ~/MVP-Tools && ./start.sh
 ```
 It will automatically compile the project and place the binary in the appropriate /bin directory.
 ```bash
